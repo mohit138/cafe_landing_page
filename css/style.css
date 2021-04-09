@@ -173,6 +173,70 @@
 
 /*about end*/
 
+
+/*footer*/
+
+.footer-container{
+  /*position:relative;*/
+  background-color: #404040;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social-media a {
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 25px;
+  border: 1px solid #333;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  margin: 5px 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #FFF;
+
+  position: relative;
+}
+
+
+
+/* Facebook */
+.fa-facebook {
+  /*background: #3B5998;*/
+  color: #3B5998;
+  /*position: absolute;*/
+}
+.fb-icon{
+  position: absolute;
+  left:2%;
+}
+
+/* Twitter */
+.fa-twitter {
+  /*background: #55ACEE;*/
+  color: #55ACEE;
+}
+.tw-icon{
+  position: absolute;
+  left:3%;
+}
+
+.fa-instagram {
+  color:#cd486b;
+}
+.ig-icon{
+  position: absolute;
+  left:4%;
+}
+
+
+.solial-content{
+  text-align: center;
+}
+/*footer end*/
+
 @media (max-width: 992px){
 
   .about-heading{
