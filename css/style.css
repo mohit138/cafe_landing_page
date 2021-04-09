@@ -10,7 +10,7 @@
 	height: 100%;
 	text-align: center;	
 	margin: auto auto;
-	font-size: 50px;
+	font-size: 60px;
 	background-color: #ffffff;
 }
 
@@ -122,25 +122,103 @@
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {opacity: 1}
+  to {opacity: 0.9}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {opacity: 1}
+  to {opacity: 0.9}
 }
 /*slideshow end*/
+
+/*ABOUT section stuff*/
+
+.about-heading{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about-content{
+  text-align: center;
+  font-size: 25px;
+  /*height: 100%;*/
+}
+
+.content-container {
+  position: relative;
+  /*border: 3px solid green;*/
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/*about end*/
+
+@media (max-width: 992px){
+
+  .about-heading{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+
+  .about-content{
+    padding : 20px 0px;
+  }
+
+  .about-img{
+    padding : 20px 0px;
+  }
+}
+
 
 @media (max-width: 768px){
 	.nav-item{
 		width: 100%;
 		text-align: center;
 	}	
+
+  .cafe-name{
+    font-size: 40px;
+  }
+
+  .about-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about-content{
+    padding : 20px 0px;
+  }
+
+  .about-img{
+    padding : 20px 0px;
+  }
+
+}
+
+@media (max-width: 568px){
+  .cafe-name{
+    font-size: 30px;
+    width: 23%;
+  }
 }
