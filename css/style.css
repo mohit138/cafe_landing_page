@@ -143,6 +143,7 @@
 .about-heading{
   text-align: center;
   margin-bottom: 50px;
+  font-size : 45px;
 }
 
 .about-container{
@@ -244,6 +245,7 @@
 .menu-heading{
   text-align: center;
   margin-bottom: 50px;
+  font-size : 45px;
 }
 
 .menu-container{
@@ -266,6 +268,7 @@
   .about-heading{
     text-align: center;
     margin-bottom: 30px;
+    font-size : 40px;
   }
 
 
@@ -281,6 +284,7 @@
   .menu-heading{
     text-align: center;
     margin-bottom: 30px;
+    font-size : 40px;
   }
 
   .menu-content{
@@ -301,6 +305,17 @@
 
   .cafe-name{
     font-size: 40px;
+  }
+
+  .about-heading{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size : 30px;
+  }
+  .menu-heading{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size : 30px;
   }
 
   .about-container{
@@ -341,5 +356,16 @@
   .cafe-name{
     font-size: 30px;
     width: 23%;
+  }
+
+  .about-heading{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size : 24px;
+  }
+  .menu-heading{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size : 24px;
   }
 }
