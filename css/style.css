@@ -20,7 +20,9 @@
 
 .navbar{
 	justify-content: center;
+  background-color: #d1d1d1;
 }
+
 
 .navbar-nav{
 	width: 100%;
@@ -265,13 +267,36 @@
 }
 
 #soups{
-  background-color: #ccc;
+  background-color: #d1d1d1;
 }
 
+#salad{
+ background-color: white; 
+}
+
+#pizza{
+  background-color: #d1d1d1;
+}
+
+#sandwitch{
+ background-color: white; 
+}
+
+#beverages{
+  background-color: #d1d1d1;
+}
+
+#dessert{
+ background-color: white; 
+}
 /*END OF MENU PAGE STYLING*/
 
 
 @media (max-width: 992px){
+
+  .cafe-name{
+    font-size: 55px;
+  }
 
   .about-heading{
     text-align: center;
@@ -312,10 +337,11 @@
 	}	
 
   .cafe-name{
-    font-size: 40px;
+    /*font-size: 40px;*/
+    width : 24%;
   }
 
-  .about-heading{
+/*  .about-heading{
     text-align: center;
     margin-bottom: 20px;
     font-size : 30px;
@@ -324,7 +350,7 @@
     text-align: center;
     margin-bottom: 20px;
     font-size : 30px;
-  }
+  }*/
 
   .about-container{
     padding-top: 30px;
@@ -360,20 +386,32 @@
 
 }
 
+@media (max-width: 620px){
+  .cafe-name{
+    /*font-size: 30px;*/
+    width: 25%;
+  }
+
+}
+
 @media (max-width: 568px){
   .cafe-name{
-    font-size: 30px;
-    width: 23%;
+    font-size: 40px;
+    width: 32%;
   }
 
   .about-heading{
     text-align: center;
     margin-bottom: 20px;
-    font-size : 24px;
+    font-size : 30px;
   }
   .menu-heading{
     text-align: center;
     margin-bottom: 20px;
-    font-size : 24px;
+    font-size : 30px;
+  }
+
+  .menu-content{
+    font-size : 23px;
   }
 }
