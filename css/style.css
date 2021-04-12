@@ -291,6 +291,21 @@
 }
 /*END OF MENU PAGE STYLING*/
 
+/*SPEALITY !!!!!!!!!!*/
+
+.grey{
+  background-color: #d1d1d1;
+}
+
+.spl-name{
+  text-align: center;
+}
+
+.spl-block{
+  padding:30px 10px 10px 10px;
+}
+
+/*SPECIALITY STUFF END*/
 
 @media (max-width: 992px){
 
