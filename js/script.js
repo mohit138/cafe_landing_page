@@ -152,3 +152,55 @@ imgChangeFunc = function(){
 
 $(window).resize(imgChangeFunc);
 $(document).ready(imgChangeFunc);
+
+
+
+// HANDELING GREY COLOR IN SPL TAB
+
+chng_grey = function(){
+	if( $(window).width()<992 && $(window).width()>=768){
+		$("#salad-spl-id").addClass(" grey");
+		$("#pizza-spl-id").removeClass("grey");
+	}
+	else
+	{
+		$("#pizza-spl-id").addClass(" grey");
+		$("#salad-spl-id").removeClass("grey");
+	}
+} 
+
+$(window).resize(chng_grey);
+$(document).ready(chng_grey);
+
+
+// // contact page stuff !!!!
+// chnage_map_size = function(){
+// 	if($(window).width() >= 992){
+// 		$("#map").each(function(){
+// 			$(this).attr("width","500");
+// 		});
+// 		console.log("500w")
+// 	}
+
+// 	else if( $(window).width()<992 && $(window).width()>=768){
+// 		$("#map").each(function(){
+// 			$(this).attr("width","600");
+// 		});
+// 		console.log("600w")
+// 	}
+// 	else if($(window).width()<768){
+// 		$("#map").each(function(){
+// 			$(this).attr("width","500");
+// 		});
+// 		console.log("500w")
+// 	}
+// 	else if($(window).width()<620){
+// 		$("#map").each(function(){
+// 			$(this).attr("width","300");
+// 		});
+// 		console.log("300w")
+// 	}
+// }
+
+// $(window).resize(chnage_map_size);
+// $(document).ready(chnage_map_size);
