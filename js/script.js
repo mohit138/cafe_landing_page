@@ -158,14 +158,34 @@ $(document).ready(imgChangeFunc);
 // HANDELING GREY COLOR IN SPL TAB
 
 chng_grey = function(){
-	if( $(window).width()<992 && $(window).width()>=768){
+	if( $(window).width()>=768){
 		$("#salad-spl-id").addClass(" grey");
-		$("#pizza-spl-id").removeClass("grey");
+		$("#soup-spl-id").removeClass("grey");
+		$("#dessert-spl-id").removeClass("grey");
+		$("#salad-spl-pic").each(function(){
+			$(this).attr("class", $(this).attr("class").replace("grey-border","white-border"));
+		});
+		$("#soup-spl-pic").each(function(){
+			$(this).attr("class", $(this).attr("class").replace("white-border","grey-border"));
+		});
+		$("#dessert-spl-pic").each(function(){
+			$(this).attr("class", $(this).attr("class").replace("white-border","grey-border"));
+		});
 	}
 	else
 	{
-		$("#pizza-spl-id").addClass(" grey");
+		$("#dessert-spl-id").addClass(" grey");
+		$("#soup-spl-id").addClass(" grey");
 		$("#salad-spl-id").removeClass("grey");
+		$("#salad-spl-pic").each(function(){
+			$(this).attr("class", $(this).attr("class").replace("white-border","grey-border"));
+		});
+		$("#soup-spl-pic").each(function(){
+			$(this).attr("class", $(this).attr("class").replace("grey-border","white-border"));
+		});
+		$("#dessert-spl-pic").each(function(){
+			$(this).attr("class", $(this).attr("class").replace("grey-border","white-border"));
+		});
 	}
 } 
 
