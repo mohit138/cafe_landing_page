@@ -191,6 +191,13 @@
 }
 /*slideshow end*/
 
+
+.mySlides>img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*ABOUT section stuff*/
 
 .about-heading{
@@ -396,11 +403,33 @@
 }
 /*cntact us end */
 
+@media (min-width: 1922px){
+  .mySlides{
+    height:900px;
+  }
+}
+
+@media (max-width: 1921px){
+  .mySlides{
+    height:850px;
+  }
+}
+
+@media (max-width: 1536px){
+  .mySlides{
+    height:670px;
+  }
+}
+
 
 @media (max-width: 992px){
 
   .cafe-name{
     font-size: 55px;
+  }
+
+  .mySlides{
+    height:570px;
   }
 
   .about-heading{
@@ -512,6 +541,10 @@
   .cafe-name{
     font-size: 40px;
     width: 32%;
+  }
+
+  .mySlides{
+    height:auto;
   }
 
   .about-heading{
