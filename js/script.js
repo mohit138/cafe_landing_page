@@ -4,7 +4,7 @@
 //  changing image in mmobile and desktop mode !!!
 imgChangeFunc = function(){
 	$(function(){
-		if($(window).width()<568){
+		if($(window).width()<576){
 			// console.log($(window).width());
 			$("#img1").each(function(){
 				$(this).attr("src", $(this).attr("src").replace("images/2900 x 2003/pasta_1.jpg","images/2300x3200/fries_1.jpg"));
@@ -18,7 +18,7 @@ imgChangeFunc = function(){
 				$(this).attr("src", $(this).attr("src").replace("images/2900 x 2003/dessert_4.jpg","images/2300x3200/dessert_1.jpg"));
 			});
 		}
-		else if ($(window).width()>=568){
+		else if ($(window).width()>=576){
 			$("#img1").each(function(){
 				$(this).attr("src", $(this).attr("src").replace("images/2300x3200/fries_1.jpg","images/2900 x 2003/pasta_1.jpg"));
 			});
@@ -88,7 +88,7 @@ $(document).ready(contentChangeFunc);
 
 imgChangeFunc = function(){
 	$(function(){
-		if($(window).width()<568){
+		if($(window).width()<576){
 			// console.log($(window).width());
 			$("#menu-img1").each(function(){
 				$(this).attr("src", $(this).attr("src").replace("../images/2900 x 2003/appetizer_1.jpg","../images/2300x3200/appetizer_2.jpg"));
@@ -118,7 +118,7 @@ imgChangeFunc = function(){
 				$(this).attr("src", $(this).attr("src").replace("images/2900 x 2003/dessert_5.jpg","images/2300x3200/dessert_3.jpg"));
 			});
 		}
-		else if ($(window).width()>=568){
+		else if ($(window).width()>=576){
 			$("#menu-img1").each(function(){
 				$(this).attr("src", $(this).attr("src").replace("../images/2300x3200/appetizer_2.jpg","../images/2900 x 2003/appetizer_1.jpg"));
 			});
