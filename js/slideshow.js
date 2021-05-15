@@ -29,19 +29,58 @@
 
 // }
 
+// (function (global) {
+
+// var ss = {};
+
 
 // automatic slide show !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 var slideIndex = 0;
-showSlides();
-
-function showSlides() {
+var temp = 2; // for the first time, arranged to load quickly
+var slidetime = 3000;
+showSlides = function () {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  // var slides = $(".mySlides");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    // console.log(slides[i].style.display)
   }
+  // console.log(slides.style)
+  console.log(slides.length)
+  // console.log(slides.style.display)
   slideIndex++;
+  
   if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  if(slides.length != 0)
+  {
+    slides[slideIndex-1].style.display = "block";
+    // console.log("block chnage");
+    temp = slidetime;
+
+  }
+  
+  setTimeout(showSlides, temp); // Change image every 2 seconds
 }
+
+
+
+
+
+
+var slides = document.getElementsByClassName("mySlides");
+// console.log(slides.style);
+showSlides();
+// console.log(slides);
+// console.log("fffffff");
+
+// document.addEventListener("DOMContentLoaded", function (event) {
+//   var slides = document.getElementsByClassName("mySlides");
+// 	console.log(slides.style);
+// 	showSlides();
+// 	console.log(slides);
+// 	console.log("fffffff");
+// });
+// global.$ss = ss;
+
+// })(window);

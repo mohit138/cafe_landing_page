@@ -83,7 +83,7 @@
 }*/
 
 .active>.nav-link{
-  color: #ff9f9f;
+  color: #f59191;
 }
 
 /*img {
@@ -275,7 +275,7 @@
 /* Facebook */
 .fa-facebook {
   /*background: #3B5998;*/
-  color: #3B5998;
+  color: #000000;
   /*position: absolute;*/
 }
 .fb-icon{
@@ -286,7 +286,7 @@
 /* Twitter */
 .fa-twitter {
   /*background: #55ACEE;*/
-  color: #55ACEE;
+  color: #000000;
 }
 .tw-icon{
   position: absolute;
@@ -294,7 +294,7 @@
 }
 
 .fa-instagram {
-  color:#cd486b;
+  color:#000000;
 }
 .ig-icon{
   position: absolute;
@@ -535,6 +535,8 @@
 
   }
 
+
+
 }
 
 @media (max-width: 568px){
@@ -556,7 +558,7 @@
   .social-media a {
     border-radius: 50%;
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     border: 1px solid #333;
     width: 30px;
     height: 30px;
@@ -570,9 +572,6 @@
     position: relative;
   }
 
- .fa{
-  font-size: 20px;
- }
 
   .contact-details{
     text-align: right;
